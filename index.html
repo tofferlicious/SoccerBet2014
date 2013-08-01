@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  
+  <link rel="stylesheet" href="jquery.mobile-1.4.0-alpha.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.4.0-alpha.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="codiqa.ext.js"></script>
+  
+  <script src="js/index.js"></script>
+  
+   <script type="text/javascript" src="phonegap.js"></script>
+          <script type="text/javascript">
+            app.initialize();
+        </script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="main" style="background:url(images/background.jpg);background-repeat:repeat;">
+    <div data-theme="a" data-role="header">
+        <h1>
+            Soccer Bet 2014
+        </h1>
+    </div>
+    <div data-role="content">
+        
+            <img src="images/Main.png" alt="Main" style="display: block; margin-left: auto; margin-right: auto">
+       
+        
+        <ul id="mainMenuList" data-inset="true" data-role="listview" data-theme="a" data-divider-theme="b">
+            <li data-role="list-divider" role="heading">
+                Menu
+            </li>
+            <li data-theme="c">
+                <a href="#myBets" data-transition="slide">
+                    My Bets
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    My Groups
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#settings" data-transition="slide">
+                    Settings
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#credits" data-transition="slide">
+                    Credits
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<div data-role="page" id="myBets">
+              <div data-role="header">
+              <a href="#main" data-icon="home" class="ui-btn-left">Home</a>
+                <h1>My Bets</h1>
+              </div>
+              
+              <div data-role="content">Content</div>
+              
+              <div data-role="collapsible-set" data-theme="a" data-content-theme="b">
+    <div data-role="collapsible">
+        <h2>Filtered list</h2>
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="index.html">Adam Kinkaid</a></li>
+            <li><a href="index.html">Alex Wickerham</a></li>
+            <li><a href="index.html">Avery Johnson</a></li>
+            <li><a href="index.html">Bob Cabot</a></li>
+            <li><a href="index.html">Caleb Booth</a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+        <h2>Formatted text</h2>
+        <ul data-role="listview" data-theme="a" data-divider-theme="b">
+            <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+            <li><a href="index.html">
+                <h3>Stephen Weber</h3>
+                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+            </a></li>
+            <li><a href="index.html">
+                <h3>jQuery Team</h3>
+                <p><strong>Boston Conference Planning</strong></p>
+                <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+        <h2>Thumbnails and split button</h2>
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="a">
+            <li><a href="index.html">
+                
+                <h3>Broken Bells</h3>
+                <p>Broken Bells</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+               
+                <h3>Warning</h3>
+                <p>Hot Chip</p>
+            </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+               
+                <h3>Wolfgang Amadeus Phoenix</h3>
+                <p>Phoenix</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+        </ul>
+    </div>
+</div>
+              
+              </div>
+    
+<div data-role="page" id="settings">
+    
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#main" data-icon="home" data-iconpos="left"
+        class="ui-btn-left">
+            Home
+        </a>
+        <h3>
+            Settings
+        </h3>
+    </div>
+    
+    <div data-role="content">
+        <div data-role="collapsible-set"  data-content-theme="a">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Login
+                </h3>
+                <form id="loginForm" action="">
+                    <div data-role="fieldcontain">
+                        <label for="textinput1">
+                            Email
+                        </label>
+                        <input name="" id="textinput1" placeholder="" value="" type="text">
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="textinput2">
+                            Password
+                        </label>
+                        <input name="" id="textinput2" placeholder="" value="" type="text">
+                    </div>
+                    <input value="Register/Login" type="submit">
+                </form>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Notifications
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
